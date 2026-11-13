@@ -1,218 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta name="description" content="Viditya Tyagi — business analyst and applied machine learning practitioner. Selected work in AI, analytics and product building.">
+  <title>Viditya Tyagi — Analytics, AI & Product</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height:50px">
-        <a class="navbar-brand" href="#">Viditya Tyagi</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#bio">Bio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Viditya Tyagi home">VT<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#work">Selected work</a>
+      <a href="#about">About</a>
+      <a href="#skills">Capabilities</a>
+      <a class="nav-contact" href="mailto:viditya.tyagi@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
     </nav>
+  </header>
 
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Business analysis · Applied AI · Product thinking</p>
+        <h1>Making data useful.<br><span>Making ideas real.</span></h1>
+        <p class="hero-intro">I’m Viditya Tyagi, a business analyst and data professional exploring how analytics, machine learning and thoughtful product design can solve practical problems.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="mailto:viditya.tyagi@gmail.com">Contact me <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-core"><span>AI</span><i>✳</i></div>
+        <span class="orbit-label label-top">insight</span>
+        <span class="orbit-label label-right">experiments</span>
+        <span class="orbit-label label-bottom">impact</span>
+      </div>
+      <div class="hero-foot"><span>INDEPENDENT PRACTICE</span><span>DATA × TECHNOLOGY × PEOPLE</span><span>BASED IN INDIA</span></div>
+    </section>
 
-    <div class="container">
+    <section class="section work-section" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">A few things I’ve been exploring</p><h2>Selected work</h2></div>
+        <span class="section-count">01 — 05</span>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-visual visual-studio"><span class="visual-kicker">AI STUDIO / EXPERIMENT</span><div class="studio-shape shape-a"></div><div class="studio-shape shape-b"></div><div class="studio-grid"></div><span class="visual-caption">Prompt → prototype → possibility</span></div>
+          <div class="project-info"><div class="project-meta"><span>01 / GENERATIVE AI</span><span class="project-arrow">↗</span></div><h3>AI Studio experiment</h3><p>An interactive AI Studio project. Open the live experiment to explore what it does.</p><a class="project-link" href="https://ai.studio/apps/7619750a-346e-40ed-80bf-0dc58df123e3" target="_blank" rel="noopener noreferrer">Explore the app <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-history"><span class="visual-kicker">OPEN SOURCE / DEVELOPER TOOLS</span><div class="history-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="history-line line-long"></div><div class="history-line line-short"></div><div class="history-line line-mid"></div><div class="history-line line-long"></div><div class="history-cursor">▍</div></div><span class="visual-caption">Find the thread that matters</span></div>
+          <div class="project-info"><div class="project-meta"><span>02 / CODING AGENTS</span><span class="project-arrow">↗</span></div><h3>Claude History</h3><p>A terminal history browser for Claude Code, Codex, Pi and OMP, with searchable conversations and tools to view, export, resume or fork sessions.</p><a class="project-link" href="https://github.com/raine/claude-history" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-cricket"><span class="visual-kicker">SPORTS ANALYTICS</span><div class="score-number">T20<span> SCORE</span></div><div class="score-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="visual-caption">A match, translated into numbers</span></div>
+          <div class="project-info"><div class="project-meta"><span>03 / MACHINE LEARNING</span><span class="project-arrow">↗</span></div><h3>T20 score prediction</h3><p>A live prediction app that estimates an innings score from the match situation and user-selected inputs.</p><a class="project-link" href="https://viditya-t20-score-prediction-score-predict-app-dmi7zk.streamlit.app/" target="_blank" rel="noopener noreferrer">View the app <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-village"><span class="visual-kicker">PUBLIC DATA / DASHBOARD</span><div class="village-chart"><span>LOCAL INDICATORS</span><i></i><i></i><i></i><i></i><b>NATIONAL AVG.</b></div><span class="visual-caption">Comparisons that reveal context</span></div>
+          <div class="project-info"><div class="project-meta"><span>04 / DATA STORYTELLING</span><span class="project-arrow">↗</span></div><h3>Mission Antyodaya</h3><p>A dashboard for exploring panchayat indicators and comparing local performance with the national average.</p><a class="project-link" href="https://vtyagi.shinyapps.io/Project_ShinyApp/" target="_blank" rel="noopener noreferrer">View the dashboard <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-lens"><span class="visual-kicker">COMPUTER VISION</span><div class="lens-ring"><div></div></div><span class="lens-tag">IMAGE → LABELS</span><span class="visual-caption">A visual search concept</span></div>
+          <div class="project-info"><div class="project-meta"><span>05 / IMAGE RECOGNITION</span><span class="project-arrow">↗</span></div><h3>Lens app</h3><p>A browser-based image labelling demo inspired by visual search tools.</p><a class="project-link" href="http://35.207.214.75/" target="_blank" rel="noopener noreferrer">Open the demo <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+    </section>
 
-        <!-- Projects -->
-        <section id="bio" class="my-5">
-            <h1>Bio</h1>
-            <div class="row">
-                <div class="col-lg-5 mb-4">
-                    <div class="card">
-                        <img src="photo.jpg" alt="Viditya's Photo">
-                    </div>
-                </div>
-                <div class="col-lg-7 mb-4">
-                    <div class="card">
-                        <p>Viditya is an experienced business analyst proficient in leveraging the power of data science
-                            to drive marketing strategies. He has deep expertise in programming, building advanced
-                            machine learning models, and conducting strategic data analytics.
-                            <br>
-                            <br>
-                            As a self-taught data professional with comprehensive knowledge of machine learning and deep
-                            learning algorithms, Viditya is passionate about creating products based on applied Machine
-                            Learning and Deep Learning.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="about-section" id="about">
+      <div class="about-mark" aria-hidden="true">V<span>.</span></div>
+      <div class="about-copy"><p class="eyebrow">A little about me</p><h2>Curiosity meets<br>clear outcomes.</h2><p>I work across business analysis, data science and applied machine learning. I enjoy turning open-ended questions into practical analyses, useful models and approachable tools.</p><p>My interests include machine learning and deep learning, product experimentation, and using data to make better decisions.</p><a class="text-link" href="mailto:viditya.tyagi@gmail.com">Let’s connect <span aria-hidden="true">↗</span></a></div>
+      <div class="about-note"><span>HOW I LIKE TO WORK</span><p>Start with the question.<br>Make the evidence clear.<br>Build for the person using it.</p></div>
+    </section>
 
-        <!-- Projects -->
-        <section id="projects" class="my-5">
-            <h1>Projects</h1>
-            <div class="row">
-                <!-- Add as many projects as you like. Repeat this div -->
-                <div class="col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- <img src="project3.jpg" class="card-img-top" alt="Project"> -->
-                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100">Project</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Lens App(mimics google lens)</h5>
-                            <p class="card-text">Ever wondered how Google lens is able to label your image. This app
-                                mimics the Google lens feature. Try it on your browser or your phone and see the magic.
-                            </p>
-                            <a href="http://35.207.214.75/" target="_blank" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
+    <section class="section capabilities" id="skills">
+      <div class="section-heading"><div><p class="eyebrow">Tools are a means, not the outcome</p><h2>Capabilities</h2></div><span class="section-count">PRACTICE / 2026</span></div>
+      <div class="capability-grid">
+        <div><span>01</span><h3>Data & analysis</h3><p>Python · SQL · Tableau</p></div>
+        <div><span>02</span><h3>Machine learning</h3><p>TensorFlow · PyTorch</p></div>
+        <div><span>03</span><h3>Cloud & delivery</h3><p>AWS (Boto3) · GCP · Docker</p></div>
+      </div>
+    </section>
 
-                <div class="col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- <img src="project4.jpg" class="card-img-top" alt="Project"> -->
-                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100">Project</div>
-                        <div class="card-body">
-                            <h5 class="card-title">T20 Score prediction</h5>
-                            <p class="card-text">This app predicts the score at the end of an innings based on current
-                                situation of the match. Try changing the input parameters and see the magic! Open for
-                                suggestions.</p>
-                            <a href="https://viditya-t20-score-prediction-score-predict-app-dmi7zk.streamlit.app/"
-                                target="_blank" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- <img src="project5.jpg" class="card-img-top" alt="Project"> -->
-                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100">Project</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Mission Antyodaya</h5>
-                            <p class="card-text">This dashboard empowers users to input parameters and gain valuable
-                                insights, visualizing the performance of panchayats and enabling easy comparison with
-                                the national average.</p>
-                            <a href="https://vtyagi.shinyapps.io/Project_ShinyApp/?_ga=2.246009420.996650497.1597139236-747928099.1597139236"
-                                target="_blank" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-lg-3 mb-3">
-                    <div class="card">
-                        <!-- <img src="project4.jpg" class="card-img-top" alt="Project"> -->
-                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100">Project</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Cric- Knowledge(Chatbot for cricket)</h5>
-                            <p class="card-text">This is a chatbot created on top of Chatbase using the data from cricinfo. Try to interact with this chatbot with knowledge of cricket.
-                            </p>
-                            <a href="https://www.chatbase.co/chatbot-iframe/ASbJ11bzhd0L1L5afoPDW" target="_blank" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills -->
-        <section id="skills" class="my-5">
-            <h1>Skills</h1>
-            <!-- Adjust the width of the inner div to reflect skill level -->
-            <div class="mb-3">
-                <div class="skills-name">Python</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                        aria-valuemax="100">80%</div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <div class="skills-name">Tensorflow</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100">70%</div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <div class="skills-name">PyTorch</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100">50%</div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <div class="skills-name">SQL</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100">70%</div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <div class="skills-name">Tableau</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                        aria-valuemax="100">80%</div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <div class="skills-name">Docker</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100">60%</div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <div class="skills-name">AWS (Boto3)</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                        aria-valuemax="100">70%</div>
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <div class="skills-name">GCP</div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                        aria-valuemax="100">50%</div>
-                </div>
-            </div>
-
-
-        </section>
-
-        <!-- Contact -->
-        <footer id="contact" class="my-5">
-            <h1>Contact Me</h1>
-            <form>
-                <div class="form-group">
-                    <label for="email"><a href="mailto:viditya.tyagi@gmail.com">viditya.tyagi@gmail.com</a></label>
-                </div>
-            </form>
-        </footer>
-
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <section class="contact-section" id="contact"><p class="eyebrow">Have a question or a useful problem?</p><h2>Let’s make something<br><span>worth sharing.</span></h2><a class="button button-light" href="mailto:viditya.tyagi@gmail.com">viditya.tyagi@gmail.com <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#top">VT<span>.</span></a><p>Thoughtful work, built one question at a time.</p><a href="#top">Back to top ↑</a><small>© <span id="year">2026</span> Viditya Tyagi</small></footer>
 </body>
-
 </html>
